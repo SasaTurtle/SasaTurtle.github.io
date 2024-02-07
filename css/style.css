@@ -1,3 +1,221 @@
 body{
+    margin: 0px;
+    padding: 0px;
     font-family: 'Saira Semi Condensed','Inter', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+/*-------------------------------------------HEADER---------------------------------------------------------*/
+
+.top{
+    background-image: url("../img/Diver-hero-section.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.menu{ /*div-2*/
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-menu{ /*span-2*/
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #ffb21b;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left-menu-text{
+    font: 900 35px/171% Saira SemiCondensed, -apple-system, Roboto, Helvetica, sans-serif;
+    align-self: center;
+    color: white;
+}
+
+
+.right-menu{ /*div-4*/
+    align-self: stretch;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+}
+.menu-item{
+    color: #fff;
+    flex-grow: 1;
+    white-space: nowrap;
+    font: 700 21px/60px Saira SemiCondensed, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.yellow{
+    background-color: #ffb21b;
+    border-radius: 0px 10px 10px 0px;
+    padding: 0 31px;
+}
+.gray{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 25px;
+}
+.radius{
+    border-radius: 10px 0px 0px 10px;
+}
+    
+.heading > h1{
+    font: 900 90px/100% Saira SemiCondensed, -apple-system, Roboto, Helvetica, sans-serif;
+    margin: 0px; 
+}
+
+.heading{
+    padding-left: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.white-text{
+    color: white;
+}
+
+.yellow-text{
+    color: #ffb21b;
+}
+
+.center-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 6px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    align-self: center;
+    display: flex;
+    margin-top: 80px;
+    width: 777px;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 10px;
+}
+.box-content{
+    gap: 100px;
+    display: flex;
+}
+
+.column{
+    text-align: center;
+    font: 700 21px/5px Saira SemiCondensed, -apple-system, Roboto, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/*-------------------------------------------MAIN---------------------------------------------------------*/
+
+.main-content{
+    align-self: stretch;
+    margin-top: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 40px;
+    display: flex;
+}
+
+.main-content-right{
+    align-items: start;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.vertical-line{
+    border-left: 10px solid #ffb21b;
+    height: 120px;
+}
+
+.main-content-heading{
+    display: flex;
+    justify-content: space-between;
+    gap: 19px;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.main-content-heading > h1{
+    color:black;
+    flex-grow: 1;
+    flex-basis: auto;
+    font: 900 50px/60px Saira SemiCondensed, -apple-system, Roboto, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.main-content-text p{
+    color: #5C5C5C;
+    font: 300 22px/25px Inter, sans-serif;
+    margin: 15px;
+}
+
+.main-content-signupButton{
+    background-color: #ffb21b;
+    border-radius: 10px;
+    padding: 12px;
+    margin-left: 16px;
+}
+
+.main-content-signupButton > a{
+    color: white;
+    font: 700 22px/35px Saira SemiCondensed, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+/*-------------------------------------------FOOTER---------------------------------------------------------*/
+footer{
+    background-color: #0245D2;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text > h1{
+    font: 900 50px/50px Saira SemiCondensed, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 10%;
+}
+
+.contact{
+    align-items: center;
+    align-self: start;
+    display: flex;
+    gap: 15px;
+    font: 400 22px/50px Inter, sans-serif;
+    color: white;
+}
+
+.socials{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5%;
 }

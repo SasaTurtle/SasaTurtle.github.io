@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma prototype</title>
+    <title>Figma Web</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +12,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+    <div class="top">
+        <header> <!-- Mozna nahrad header divem a dej tomu divu ten horni padding, je mozny ze to menu nebude mozny vycentrovat jako ehader -->
+            <div class="menu">
+                    <span class="left-menu">
+                        <img src="icons/Diver-logo.svg" class="img" width="60px">
+                        <div class="left-menu-text">DIVERS UNITED</div>
+                    </span>
+
+                <div class="right-menu">
+                        <a href="/"><div class="menu-item gray radius">HOME</div></a>
+                        <a href="about.html"><div class="menu-item gray">ABOUT</div></a>
+                        <a href="#"><div class="menu-item gray">LOCATIONS</div></a>
+                        <a href="#"><div class="menu-item gray">CONTACT</div></a>
+                        <a href="login.html"><div class="menu-item yellow">SIGN UP</div></a>
+                </div>
+            </div>
+        </header>
+            <div class="heading"><h1 class="white-text">DIVE LIKE<h1 class="yellow-text"><span class="white-text">A</span> MASTER</h1></h1></div>
+
+            <div class="center-box">
+                <div class="box">
+                    <div class="box-content">
+                        <div class="column">
+                            <img src="icons/diving.svg" width="75px">
+                            <h3 class="yellow-text">DIVING</h3>
+                        </div>
+
+                        <div class="column">
+                            <img src="icons/snorkeling.svg" width="75px">
+                            <h3 class="yellow-text">SNORKELING</h3>
+                        </div>
+
+                        <div class="column">
+                            <img src="icons/trips.svg" width="75px">
+                            <h3 class="yellow-text">TRIPS</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <main>
+        <div class="main-content">
+            <img src="img/potapec-small.png" alt="Tohle jsem ja btw (pod vodou)" width="500px" >
+            <div class="main-content-right">
+                <div class="main-content-heading">
+                    <div class="vertical-line"></div>
+                    <h1>HOW TO GET <br/> STARTED</h1>
+                </div>
+                <div class="main-content-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br/><br/>
+
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="main-content-signupButton">
+                    <a href="login.html">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+    </main>
     
+    <footer>
+        <div class="footer-text">
+            <h1 class="white-text">READY FOR YOUR <br/><span class="yellow-text"> NEXT</span> LESSON?</h1>
+            <div class="contact">
+                <img src="icons/paper-airplane.svg" width="24px">
+                <p>contact@diversunited.com</p>
+            </div>
+        </div>    
+            <div class="socials">
+                <img src="icons/linkedin.svg" width="40px">
+                <img src="icons/instagram.svg" width="40px">
+                <img src="icons/facebook.svg" width="40px">
+            </div>
+    </footer>
+
 </body>
 </html>
