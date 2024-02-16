@@ -20,7 +20,7 @@ a{
 header{
     padding-top: 50px;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 6%;
 }
 
 .menu{ /*div-2*/
@@ -51,7 +51,7 @@ header{
 .right-menu{ /*div-4*/
     align-self: stretch;
     align-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
 
@@ -69,7 +69,7 @@ header{
 }
 .gray{
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 0 25px;
+    padding: 0 15px;
 }
 .radius{
     border-radius: 10px 0px 0px 10px;
@@ -218,4 +218,116 @@ footer{
     flex-direction: column;
     align-items: flex-end;
     padding-right: 5%;
+}
+
+
+@media only screen and (max-width: 1350px){
+
+    .right-menu{
+        display: none;
+    }
+    
+    .left-menu-text{
+        color: red;
+    }
+
+    .main-content{
+        flex-direction: column;
+    }
+
+    .main-content > img{
+        width: 100%;
+    }
+}
+
+
+/* Media query for tablets */
+@media only screen and (max-width: 1024px) {
+    /* Adjustments for header */
+    .top {
+        background-size: contain;
+    }
+
+    .left-menu-text{
+        color: green;
+    }
+    
+
+    /* Adjustments for main content */
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content-right {
+        margin-left: 0;
+    }
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 700px) {
+    /* Adjustments for header */
+
+
+    header {
+        padding-top: 20px;
+    }
+
+    .left-menu-text {
+        font-size: 24px;
+    }
+
+    .menu-item {
+        font-size: 16px;
+    }
+
+    /* Adjustments for heading */
+    .heading {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .heading > h1 {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+
+    /* Adjustments for main content */
+    .main-content {
+        margin-top: 100px;
+    }
+
+    .main-content-heading > h1 {
+        font-size: 36px;
+    }
+
+    .main-content-text p {
+        font-size: 18px;
+    }
+
+    .main-content-signupButton {
+        margin-left: 0;
+    }
+
+    /* Adjustments for footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text {
+        width: auto;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socials {
+        flex-direction: row;
+        align-items: center;
+    }
 }
