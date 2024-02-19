@@ -1,0 +1,248 @@
+/* General */
+* {
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Image with diver */
+#img-diver {
+    display: none;
+}
+
+/* Logo at the Top */
+.logo-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+
+    gap: 15px;
+
+    margin-top: 50px;
+    margin-bottom: 10vh;
+}
+
+/* Greeting at the top */
+#greeting {
+    display: flex;
+
+    justify-content: left;
+    align-items: center;
+
+    width: 72%;
+
+    height: 43px;
+
+    margin-left: 14%;
+}
+
+/* Form */
+form {
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* Label for all the labels */
+label { 
+    display: flex;
+
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    height: 34px;
+
+    margin-left: 14%;
+    margin-top: 20px;
+}
+
+/* Input style for text & password*/
+input[type="text"], input[type="password"] {
+    border: none;
+    border-radius: 10px;
+
+    color: #878787;
+    background-color: #E2E2E2;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+    line-height: 60px;
+
+    height: 67px;
+    width: 72%;
+
+    padding-left: 10px;
+    margin-left: 14%;
+}
+
+/* Changes color when the cursor is over the input fields */
+input[type="text"]:hover, input[type="password"]:hover {
+    background-color: #e2e2e2a2;
+}
+
+/* Changes color when is clicked into the input fields */
+input[type="text"]:focus, input[type="password"]:focus {
+    background-color: #e2e2e2a2;
+    outline: none;
+}
+
+/* Container design */
+.additions-container {
+    width: 72%;
+    margin-left: 14%;
+    margin-top: 18px;
+
+    display: inline-flex;
+
+    align-items: center;
+    
+    gap: 11px;
+}
+
+/* Checkbox design to look like a toggle switch */
+.toggle-switch {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    width: 50%;
+}
+.toggle-switch label {
+    margin: 0;
+}
+
+/* Link design */
+.additions-container a {
+    display: flex;
+
+    width: 50%;
+
+    justify-content: right;
+
+    text-decoration: none;
+    color: #1E5DFF;
+}
+
+/* From w3schools */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+
+    display: inline-block;
+
+    height: 25px;
+    width: 50px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+
+    top: 0;
+    left: 0;
+    
+    right: 0;
+    bottom: 0;
+    
+    border-radius: 11px;
+
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+
+    content: "";
+
+    height: 20px;
+    width: 20px;
+
+    left: 3px;
+    bottom: 3px;
+    
+    border-radius: 11px;
+    
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.10));
+    background-color: white;
+
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(23px);
+}
+
+/* Button design */
+button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 65px;
+
+    background: var(--orange, #FFB21B);
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+
+    height: 60px;   
+    width: 318px;
+
+    color: #FFF;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
+/* When cursor over the button design */
+button:hover {
+    background-color: #ffc758;
+}
+
+/* Active (clicked) state */
+button:active {
+    background-color: #a37210; /* Change color when button is clicked */
+}
+
+/* Button container to center the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
