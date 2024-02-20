@@ -1,5 +1,5 @@
 /* Rozhraní pro PC*/
-@media screen and (min-width: 1550px) {
+@media screen and (min-width: 1080px) {
     .container-img {
         display: flex;
 
@@ -11,11 +11,11 @@
     #img-diver {
         display: flex;
 
-        width: 78%;
+        width: 60%;
         height: 100vh;
     }
     .container {
-        width: 32%;
+        width: 40%;
         height: 100vh;
     }
 }
