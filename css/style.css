@@ -2,19 +2,128 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Saira Semi Condensed','Inter', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+.hamburger{
+    display: none;
 }
 
 a{
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 /*-------------------------------------------HEADER---------------------------------------------------------*/
 
+/*-------------------------------------------Hamburger menu------------------------------------------------*/
+  #menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    margin: 30px 0 20px 0px;
+    cursor: pointer;
+  }
+
+  #nav {
+    position:absolute;
+    transform:translateY(65px);
+}
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #ffb21b;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 0px;
+    display: flex;
+    flex-direction: column;
+}
+  
+  .nav li {
+    list-style: none;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #ffb21b, #ffb21b);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(40%,-30%);
+  }
+
+
+
+/*-------------------------------------------Hamburger menu end------------------------------------------------*/
+
 .top{
-    background-image: url("../img/Diver-hero-section.png");
+    background-image: url("../img/potapec.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:0;
 }
 
 header{
@@ -107,7 +216,6 @@ header{
     background-color: #fff;
     align-self: center;
     display: flex;
-    margin-top: 80px;
     width: 777px;
     max-width: 100%;
     flex-direction: column;
@@ -220,15 +328,51 @@ footer{
     padding-right: 5%;
 }
 
+/*-------------------------------------------MEDIA QUERIES---------------------------------------------------------*/
+
+@media only screen and (max-width: 1680px){
+    .top {
+        background-size: cover;
+    }
+    
+}
+
 
 @media only screen and (max-width: 1350px){
+
+    .top {
+        background-size: cover;
+    }
 
     .right-menu{
         display: none;
     }
-    
-    .left-menu-text{
-        color: red;
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .radius{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .yellow{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+
+    .heading {
+        padding-left: 10%;
+        padding-top: 60px;
+        padding-bottom: 75px;
+    }
+
+    .heading > h1 {
+        font: 900 75px/100% Saira SemiCondensed, -apple-system, Roboto, Helvetica, sans-serif;
+        margin: 0px;
     }
 
     .main-content{
@@ -245,11 +389,33 @@ footer{
 @media only screen and (max-width: 1024px) {
     /* Adjustments for header */
     .top {
-        background-size: contain;
+        background-size: cover;
     }
 
-    .left-menu-text{
-        color: green;
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .radius{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .yellow{
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .heading {
+        padding-left: 10%;
+        padding-top: 30px;
+        padding-bottom: 75px;
+    }
+
+    .heading > h1 {
+        font: 900 7vw/100% Saira SemiCondensed, -apple-system, Roboto, Helvetica, sans-serif;
+        margin: 0px;
     }
     
 
@@ -262,12 +428,31 @@ footer{
     .main-content-right {
         margin-left: 0;
     }
+
+    .box-content {
+        gap: 6vw;
+        display: flex;
+    }
+
+    .box {
+        width: 70vw;
+    }
 }
 
 /* Media query for phones */
 @media only screen and (max-width: 700px) {
     /* Adjustments for header */
 
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .top{
+        background-size: cover;
+    }
 
     header {
         padding-top: 20px;
@@ -285,11 +470,16 @@ footer{
     .heading {
         padding-top: 50px;
         text-align: center;
+        margin-right: 10vw;
     }
 
     .heading > h1 {
-        font-size: 48px;
-        line-height: 1.2;
+        font-size: 65px;
+        line-height: 1;
+    }
+
+    .box {
+        width: 510px;
     }
 
     /* Adjustments for main content */
@@ -322,12 +512,12 @@ footer{
     }
 
     .contact {
-        flex-direction: column;
         align-items: center;
     }
 
     .socials {
         flex-direction: row;
         align-items: center;
+        margin-top: 20px;
     }
 }

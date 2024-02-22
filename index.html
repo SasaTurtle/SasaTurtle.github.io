@@ -13,11 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="top">
-        <header> <!-- Mozna nahrad header divem a dej tomu divu ten horni padding, je mozny ze to menu nebude mozny vycentrovat jako ehader -->
+        <header> 
             <div class="menu">
                     <span class="left-menu">
                         <img src="icons/Diver-logo.svg" class="img" width="60px">
@@ -25,13 +25,36 @@
                     </span>
 
                 <div class="right-menu">
-                        <a href="/"><div class="menu-item gray radius">HOME</div></a>
-                        <a href="about.html"><div class="menu-item gray">ABOUT</div></a>
-                        <a href="#"><div class="menu-item gray">LOCATIONS</div></a>
-                        <a href="#"><div class="menu-item gray">CONTACT</div></a>
-                        <a href="login.html"><div class="menu-item yellow">SIGN UP</div></a>
+                            <a href="/"><div class="menu-item gray radius">HOME</div></a>
+                            <a href="about.html"><div class="menu-item gray">ABOUT</div></a>
+                            <a href="#"><div class="menu-item gray">LOCATIONS</div></a>
+                            <a href="#"><div class="menu-item gray">CONTACT</div></a>
+                            <a href="login.html"><div class="menu-item yellow">SIGN UP</div></a>
                 </div>
+
+                <div id="hamburger-menu" class="hamburger">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                      <div id="bar1" class="bar"></div>
+                      <div id="bar2" class="bar"></div>
+                      <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                      <ul>
+                        <li><a href="/"><div class="menu-item gray radius">HOME</div></a></li>
+                        <li><a href="about.html"><div class="menu-item gray">ABOUT</div></a></li>
+                        <li><a href="#"><div class="menu-item gray">LOCATIONS</div></a></li>
+                        <li><a href="#"><div class="menu-item gray">CONTACT</div></a></li>
+                        <li><a href="login.html"><div class="menu-item yellow">SIGN UP</div></a></li>
+                      </ul>
+                    </nav> 
+                  </div>
+                  
+                  <!-- <div class="menu-bg" id="menu-bg"></div> --> 
+
+
             </div>
+            
+
         </header>
             <div class="heading"><h1 class="white-text">DIVE LIKE<h1 class="yellow-text"><span class="white-text">A</span> MASTER</h1></h1></div>
 
